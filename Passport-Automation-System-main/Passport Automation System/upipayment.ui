@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>813</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Payment Through Card</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="Payment">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+background:rgba;
+font-family:century gothic;
+font-size:24px;
+}
+QFrame
+{
+background:rgba;
+border-radius:15px
+}
+QPushButton
+{
+background:red;
+border-radius:60px;
+}
+QToolButton
+{
+background:red;
+border-radius:60px;
+}
+QLabel
+{
+color:white;
+background:transparent;
+}
+QPushButton
+{
+color:white;
+border-radius:15px;
+}
+QPushButton:hover
+{
+color:#333;
+border-radius:15px;
+background:#49ebff;
+}
+QLineEdit
+{
+background:transparent;
+border:none;
+color:#717072;
+border-bottom:1px solid #717072
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>561</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:red;
+};</string>
+    </property>
+    <property name="text">
+     <string>                Payment Through UPI - BHIM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="verifybtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>481</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verify and Confirm Payment</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>180</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Email Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>541</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background:red;
+};</string>
+    </property>
+    <property name="text">
+     <string>                         Payment Details</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Full Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>290</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date of Birth</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>340</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gender</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fname">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>130</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Full Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string notr="true">Email Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UPI ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="upi_id">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>480</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string notr="true">UPI ID @upi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>520</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gender">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>350</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string notr="true">Gender</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dob">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>300</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string notr="true">DD/MM/YYYY</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
